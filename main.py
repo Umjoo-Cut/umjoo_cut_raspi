@@ -534,12 +534,10 @@ def main():
                         break
                 else:
                     # 정상 호흡 + 음주 아님
-                    if retry_count < MAX_RETRY:
-                        print("정상 측정 완료 → 다음 측정을 위해 RETRY 전송")
-                        uart.send_message(MSG_RETRY)
-                        continue
+                    print("✅ 정상 판정 → 즉시 본인 검증 단계 이동")
 
-                    print("정상 측정 3회 완료 → 본인 검증 단계로 이동")
+                    retry_count = 0
+
                     break
             
 
@@ -634,8 +632,6 @@ def main():
             print("=" * 50)
 
             uart.send_message(MSG_PASS)
-
-            retry_count = 0
 
             # =========================
             # [수정됨] 정상 통과 이미지 저장 정책

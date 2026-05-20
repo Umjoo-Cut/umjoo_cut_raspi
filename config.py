@@ -159,11 +159,6 @@ MSG_HUM_PREFIX = "HUM:"
 # Raspberry Pi가 시퀀스를 시작하겠다는 응답
 MSG_ACK_START = "ACK:START"
 
-# MQ3 측정 시작 요청
-# 얼굴 인증 및 위치 검증 완료 후 전송
-# STM32는 이 메시지를 받으면 MQ3 측정 시작
-MSG_REQ_MQ3 = "REQ:MQ3"
-
 # 최종 정상 통과
 # STM32는 릴레이 ON / Green LED 처리
 MSG_PASS = "PASS"
