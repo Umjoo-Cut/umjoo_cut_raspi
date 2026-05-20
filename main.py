@@ -510,7 +510,7 @@ def main():
                     if retry_count < MAX_RETRY:
 
                         print("RPi -> STM32: RETRY 전송")
-                        uart.send_message(MSG_RETRY)
+                        uart.send_message(MSG_FAIL)
 
                         print(
                             f"{retry_count}회차 음주 감지 "
