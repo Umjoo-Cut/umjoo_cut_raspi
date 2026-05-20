@@ -26,7 +26,7 @@ FACE_DET_SIZE = (320, 320)
 # [수정됨] 세션 본인 검증 Threshold
 # face_A 평균 embedding ↔ face_B 비교
 # =========================
-IDENTITY_VERIFY_THRESHOLD = 0.5
+IDENTITY_VERIFY_THRESHOLD = 0.7
 
 # =========================
 # [추가됨] 세션 얼굴 촬영 개수
