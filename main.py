@@ -16,6 +16,7 @@ from config import (
     MSG_FAIL,
     MSG_RETRY,
     MSG_ERROR,
+    MSG_OTHER,
     MAX_RETRY,
     SESSION_FACE_CAPTURE_COUNT,
     SEAT_RECOVERY_TIMEOUT
@@ -617,7 +618,8 @@ def main():
                     final_result="IDENTITY_FAIL",
                     reason=alcohol_result["reason"]
                 )
-                uart.send_message(MSG_FAIL)
+                uart.send_message(MSG_OTHER)
+                
 
                 print("=" * 50)
                 print("⚠️ 측정자와 현재 운전자가 다릅니다")
