@@ -136,9 +136,7 @@ class AlcoholJudge:
         # 제대로 불지 않은 것으로 판단
         # =========================
         is_blown = (
-            len(hum_values) > 0
-            and
-            mq3_delta >= MQ3_BLOW_DELTA_THRESHOLD
+            len(hum_values) >= 2
             and
             hum_delta >= HUM_BLOW_DELTA_THRESHOLD
         )
