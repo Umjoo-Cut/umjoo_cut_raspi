@@ -62,8 +62,8 @@ MQ3_MEASURE_SAMPLE_COUNT = 40
 # delta = peak - baseline
 # delta >= 500 이면 음주 판정
 MQ3_DRUNK_DELTA_THRESHOLD = 500   # 음주 판정 기준
-MQ3_BLOW_DELTA_THRESHOLD = 50     # MQ3 호흡 감지 최소 변화량
-HUM_BLOW_DELTA_THRESHOLD = 3.0    # 습도 호흡 감지 최소 변화량(%)
+MQ3_BLOW_DELTA_THRESHOLD = 80     # MQ3 호흡 감지 최소 변화량
+HUM_BLOW_DELTA_THRESHOLD = 8.0    # 습도 호흡 감지 최소 변화량(%)
 
 # =========================
 # 재측정 정책

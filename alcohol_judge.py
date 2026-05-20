@@ -135,10 +135,12 @@ class AlcoholJudge:
         # MQ3 변화량과 습도 변화량이 모두 작으면
         # 제대로 불지 않은 것으로 판단
         # =========================
-        is_blown = not (
-            mq3_delta < MQ3_BLOW_DELTA_THRESHOLD
+        is_blown = (
+            len(hum_values) > 0
             and
-            hum_delta < HUM_BLOW_DELTA_THRESHOLD
+            mq3_delta >= MQ3_BLOW_DELTA_THRESHOLD
+            and
+            hum_delta >= HUM_BLOW_DELTA_THRESHOLD
         )
 
         if not is_blown:

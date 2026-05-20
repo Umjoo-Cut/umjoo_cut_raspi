@@ -140,7 +140,13 @@ def collect_sensor_values(uart):
 
             try:
                 value = float(message.split(":")[1])
+
+                if value <= 0:
+                    print(f"HUM 비정상 값 무시: {value}")
+                    continue
+
                 hum_values.append(value)
+
             except ValueError:
                 print("HUM 값 변환 실패")
 
