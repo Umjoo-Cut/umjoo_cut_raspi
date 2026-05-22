@@ -1,8 +1,21 @@
+
+
 # Hardware & System Architecture
 
 본 시스템은 STM32F411RE를 중심으로 센서 데이터 수집, 시스템 상태 제어, Raspberry Pi 통신 및 차량 시동 제어 기능을 수행한다.
 
 ---
+
+# PINMAP
+
+## STM
+<img width="1014" height="775" alt="image" src="https://github.com/user-attachments/assets/87fc4add-7ff4-4eb5-b279-baf40f17c223" />
+<img width="376" height="330" alt="image" src="https://github.com/user-attachments/assets/988f76b1-a890-485d-a979-8dcab23a426d" />
+
+# RASPI
+
+<img width="767" height="478" alt="image" src="https://github.com/user-attachments/assets/3ab9fa4b-673a-4e3d-82d0-ec6a8905c159" />
+
 
 # Main Controller
 
